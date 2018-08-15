@@ -22,3 +22,38 @@ ul{
     padding: 0 15px;
 }
 
+.banner{
+    width: 560px;
+    height: 440px;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.slider .img{
+    width: 550px;
+    height: 315px;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.advantages .advImg{
+    width: 55px;
+    height: 55px;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.banneInv{
+    width: 380px;
+    height: 425px;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
