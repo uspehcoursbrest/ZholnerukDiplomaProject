@@ -31,16 +31,56 @@ ul{
 
 .topHead{
     background-color: #f4f8fa;
+    padding-top: 20px;
 }
 
 header .headWrap{
     display: table;
     width: 100%;
+    text-align: center;
+}
+
+.invisLink{
+    position: relative;
+    z-index: 1;
+}
+
+.invisLink > a{
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 7;
+    overflow: hidden;
+    text-indent: 200%;
+    white-space: nowrap;
 }
 
 header .logo{
     display: table-cell;
     vertical-align: middle;
+    width: 275px;
+    padding-right: 85px;
+    position: relative;
+}
+
+header .skylax{
+    font-size: 42px;
+    font-weight: bold;
+    color: #323232;
+    margin-left: 15px;
+}
+
+header .exchange{
+    font-size: 13px;
+    font-family: Calibri;
+    color: #323232;
+    display: block;
+    position: absolute;
+    left: 140px;
+    top: 15px;
 }
 
 header .headCont{
@@ -56,18 +96,6 @@ header .lang{
 header .cab{
     display: table-cell;
     vertical-align: middle;
-}
-
-header .exchange{
-    font-size: 42px;
-    font-weight: bold;
-    color: #323232;
-}
-
-header .skylax{
-    font-size: 13px;
-    font-family: Calibri;
-    color: #323232;
 }
 
 header .headCont a{
@@ -104,8 +132,27 @@ header button{
     color: #fffefe;
 }
 
+.botHead .imgWrap{
+    float: left;
+    width: 35px;
+}
+
+.botHead .imgWrap img{
+    display: block;
+}
+
+.botHead .imgWrap img:first-child{
+    margin-top: 50px;
+}
+
+.botHead .imgWrap img+img{
+    margin-top: 30px;
+}
+
 .botHead .leftMenu{
     float: left;
+    width: 225px;
+    padding-left: 30px;
 }
 
 .botHead .leftMenu li a{
@@ -140,6 +187,7 @@ header button{
     font-weight: bold;
     color: #83ab4a;
 }
+
 
 .botHead .socials span{
     font-family: Myryad Pro;
@@ -206,6 +254,31 @@ header button{
     color: #ffffff;
 }
 
+.calculator button{
+    font-size: 14px;
+    color: rgb( 255, 255, 255 );
+    width: 200px;
+    height: 50px;
+    border-radius: 50px;
+    border: none;
+}
+
+.cacl1 .calculator button{
+    background: #36a0bc;
+    background: -moz-linear-gradient(top, #36a0bc 0%, #4cd5f9 100%);
+    background: -webkit-linear-gradient(top, #36a0bc 0%,#4cd5f9 100%);
+    background: linear-gradient(to bottom, #36a0bc 0%,#4cd5f9 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#36a0bc', endColorstr='#4cd5f9',GradientType=0 );
+}
+
+.cacl2 .calculator button{
+    background: #81a03b;
+    background: -moz-linear-gradient(top, #81a03b 0%, #a0bd5f 100%);
+    background: -webkit-linear-gradient(top, #81a03b 0%,#a0bd5f 100%);
+    background: linear-gradient(to bottom, #81a03b 0%,#a0bd5f 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#81a03b', endColorstr='#a0bd5f',GradientType=0 );
+}
+
 .slider .text h2{
     font-size: 22px;
     color: #20b6e7;
@@ -233,11 +306,23 @@ header button{
 
 .advantages .wrap{
     float: left;
+    width: calc(100%/7);
+    padding-left: 45px;
+    padding-right: 45px;
 }
 
 .advantages .advImg{
     width: 55px;
     height: 55px;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.advantages .advImgKey{
+    width: 55px;
+    height: 30px;
     -webkit-background-size: cover;
     background-size: cover;
     background-position: center;
@@ -312,6 +397,11 @@ header button{
 
 .partners img{
     display: inline-block;
+    vertical-align: middle;
+}
+
+.partners img+img{
+    margin-left: 30px;
 }
 
 .partners h2{
@@ -325,6 +415,11 @@ header button{
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
+}
+
+.topFoot{
+    padding-top: 40px;
+    padding-bottom: 40px;
 }
 
 .topFoot .copyright{
@@ -357,6 +452,10 @@ header button{
     color: #ffffff;
 }
 
+.topFoot li{
+    margin-top: 20px;
+}
+
 .topFoot li a{
     font-size: 14px;
     font-weight: 300;
@@ -367,31 +466,64 @@ header button{
 .topFoot .about{
     float: left;
     width: 290px;
-    padding-left: 48px;
-    padding-right: 48px;
+    padding-left: 46px;
+    padding-right: 46px;
+}
+
+.about div{
+    display: inline-block;
+}
+
+.about .img{
+    vertical-align: top;
+    padding-right: 20px;
 }
 
 .topFoot .profit{
     float: left;
     width: 310px;
-    padding-left: 35px;
-    padding-right: 35px;
+    padding-left: 33px;
+    padding-right: 33px;
+}
+
+.profit div{
+    display: inline-block;
+}
+
+.profit .img{
+    vertical-align: top;
+    padding-right: 20px;
 }
 
 .topFoot .clientInfo{
     float: right;
-    padding-left: 35px;
+    padding-left: 33px;
+}
+
+.clientInfo div{
+    display: inline-block;
+}
+
+.clientInfo .img{
+    vertical-align: top;
+    padding-right: 20px;
 }
 
 .botFoot {
     display: table;
     width: 100%;
+    padding-top: 35px;
+    padding-bottom: 35px;
 }
 
 .botFoot h4{
     font-size: 15px;
     font-weight: 500;
     color: #ffffff;
+}
+
+.botFoot .title{
+    margin-bottom: 15px;
 }
 
 .botFoot .adress{
