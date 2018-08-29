@@ -107,6 +107,7 @@ header .headCont a{
 header .headCont span{
     color: #13b4f0;
     font-size: 25px;
+    line-height: 25px;
 }
 
 header .lang .ru{
@@ -263,12 +264,26 @@ header button{
     border: none;
 }
 
+.cacl1{
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center;
+}
+
 .cacl1 .calculator button{
     background: #36a0bc;
     background: -moz-linear-gradient(top, #36a0bc 0%, #4cd5f9 100%);
     background: -webkit-linear-gradient(top, #36a0bc 0%,#4cd5f9 100%);
     background: linear-gradient(to bottom, #36a0bc 0%,#4cd5f9 100%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#36a0bc', endColorstr='#4cd5f9',GradientType=0 );
+}
+
+.cacl2{
+    background-repeat: no-repeat;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center;
 }
 
 .cacl2 .calculator button{
@@ -306,7 +321,7 @@ header button{
 
 .advantages .wrap{
     float: left;
-    width: calc(100%/7);
+    width: calc(100% / 6);
     padding-left: 45px;
     padding-right: 45px;
 }
