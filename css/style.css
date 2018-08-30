@@ -29,6 +29,19 @@ ul{
     padding: 0 15px;
 }
 
+a{
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+    opacity: 1;
+}
+
+a:hover{
+    opacity: 0.6;
+}
+
 .topHead{
     background-color: #f4f8fa;
     padding-top: 20px;
@@ -133,6 +146,12 @@ header button{
     color: #fffefe;
 }
 
+header button:hover{
+    border: 1px solid #39a8c6;
+    background-color: #fff;
+    color: #39a8c6;
+}
+
 .botHead .imgWrap{
     float: left;
     width: 35px;
@@ -154,6 +173,11 @@ header button{
     float: left;
     width: 225px;
     padding-left: 30px;
+}
+
+.botHead .leftMenu a:hover{
+    opacity: 1;
+    color: #8aaf57;
 }
 
 .botHead .leftMenu li a{
@@ -272,11 +296,17 @@ header button{
 }
 
 .cacl1 .calculator button{
-    background: #36a0bc;
     background: -moz-linear-gradient(top, #36a0bc 0%, #4cd5f9 100%);
     background: -webkit-linear-gradient(top, #36a0bc 0%,#4cd5f9 100%);
     background: linear-gradient(to bottom, #36a0bc 0%,#4cd5f9 100%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#36a0bc', endColorstr='#4cd5f9',GradientType=0 );
+    border: 1px solid transparent;
+}
+
+.cacl1 .calculator button:hover{
+    border: 1px solid #39a8c6;
+    background-color: #fff;
+    color: #39a8c6;
 }
 
 .cacl2{
@@ -287,11 +317,17 @@ header button{
 }
 
 .cacl2 .calculator button{
-    background: #81a03b;
     background: -moz-linear-gradient(top, #81a03b 0%, #a0bd5f 100%);
     background: -webkit-linear-gradient(top, #81a03b 0%,#a0bd5f 100%);
     background: linear-gradient(to bottom, #81a03b 0%,#a0bd5f 100%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#81a03b', endColorstr='#a0bd5f',GradientType=0 );
+    border: 1px solid transparent;
+}
+
+.cacl2 .calculator button:hover{
+    border: 1px solid #84a23e;
+    background-color: #fff;
+    color: #84a23e;
 }
 
 .slider .text h2{
