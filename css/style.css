@@ -98,7 +98,9 @@ header .exchange{
 
 header .headCont{
     display: table-cell;
+    width: 635px;
     vertical-align: middle;
+    text-align: justify;
 }
 
 header .lang{
@@ -152,32 +154,27 @@ header button:hover{
     color: #39a8c6;
 }
 
-.botHead .imgWrap{
-    float: left;
-    width: 35px;
-}
-
 .botHead .imgWrap img{
     display: block;
 }
 
-.botHead .imgWrap img:first-child{
-    margin-top: 50px;
-}
-
-.botHead .imgWrap img+img{
-    margin-top: 30px;
-}
-
 .botHead .leftMenu{
     float: left;
-    width: 225px;
+    width: 260px;
     padding-left: 30px;
 }
 
 .botHead .leftMenu a:hover{
     opacity: 1;
     color: #8aaf57;
+}
+
+.botHead .leftMenu li:first-child{
+    margin-top: 50px;
+}
+
+.botHead .leftMenu li+li{
+    margin-top: 25px;
 }
 
 .botHead .leftMenu li a{
@@ -254,6 +251,22 @@ header button:hover{
     font-size: 16px;
 }
 
+.calculator h2{
+    font-weight: normal;
+}
+
+.calculator span{
+    color: #ffffff;
+    font-size: 16px;
+    line-height: 42px;
+}
+
+.calculator .counts span{
+    font-size: 12px;
+    line-height: 42px;
+    font-weight: 300;
+}
+
 .rightBlock h2{
     font-size: 22px;
     color: #ffffff;
@@ -295,6 +308,42 @@ header button:hover{
     background-position: center;
 }
 
+.cacl1 .leftBlock{
+    float: left;
+    width: 240px;
+}
+
+.cacl1 .leftBlock .h2{
+    display: block;
+}
+
+.cacl1 .leftBlock span{
+    display: block;
+    text-align: left;
+}
+
+.cacl1 .calculator{
+    float: left;
+    padding-left: 80px;
+    width: 590px;
+}
+
+.cacl1 .calculator h2, span{
+    color: #fff;
+}
+
+.cacl1 .rightBlock{
+    text-align: left;
+}
+
+.cacl1 .rightBlock li{
+    display: block;
+}
+
+.cacl1 .rightBlock li p, span{
+    display: inline-block;
+}
+
 .cacl1 .calculator button{
     background: -moz-linear-gradient(top, #36a0bc 0%, #4cd5f9 100%);
     background: -webkit-linear-gradient(top, #36a0bc 0%,#4cd5f9 100%);
@@ -314,6 +363,42 @@ header button:hover{
     -webkit-background-size: cover;
     background-size: cover;
     background-position: center;
+}
+
+.cacl2 .leftBlock{
+    float: left;
+    width: 240px;
+}
+
+.cacl2 .leftBlock .h2{
+    display: block;
+}
+
+.cacl2 .leftBlock span{
+    display: block;
+    text-align: left;
+}
+
+.cacl2 .calculator{
+    float: left;
+    padding-left: 80px;
+    width: 590px;
+}
+
+.cacl2 .calculator h2, span{
+    color: #fff;
+}
+
+.cacl2 .rightBlock{
+    text-align: left;
+}
+
+.cacl2 .rightBlock li{
+    display: block;
+}
+
+.cacl2 .rightBlock li p, span{
+    display: inline-block;
 }
 
 .cacl2 .calculator button{
@@ -651,5 +736,68 @@ header button:hover{
     font-size: 35px;
     color: #ffffff;
     text-decoration: none;
+}
+
+.partnership .invText{
+    float: left;
+    width: 475px;
+}
+
+.partnership .invText h3 {
+    font-family: Roboto;
+    font-size: 24px;
+    color: #20b6e7;
+}
+
+.partnership .invText p{
+    font-size: 14px;
+    line-height: 18px;
+    color: #616161;
+}
+
+.partnership .banneInv{
+    float: left;
+    width: 380px;
+    height: 430px;
+    -webkit-background-size: cover;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.partnership .invRightMenu span{
+    font-family: Roboto;
+    font-weight: bold;
+    font-size: 32px;
+    line-height: 24px;
+}
+
+.partnership .invRightMenu p{
+    font-family: Roboto;
+    font-size: 18px;
+    line-height: 24px;
+}
+
+.typesDep span{
+    color: #ffffff;
+}
+
+.typesDep .typesWrap{
+    display: ;
+}
+
+.typesDep .container{
+    display: table;
+}
+
+.typeDep1{
+    display: table-cell;
+    width: 50%;
+}
+
+.typeDep2{
+    display: table-cell;
+    width: 50%;
+
 }
 
